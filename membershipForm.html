@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>360 Corridor Democratic Action!</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="membershipForm.css">
+
+</head>
+<body>
+
+	<div class="page-center">
+
+		<div class="top-bar">
+			<img class="logo" src="../cda logo.png"/>
+			<h1 class="main-title">360 Corridor Democratic Action!</h1>
+		</div>
+
+		<ul class="nav-list">
+			<li class="nav-item">
+				<a class="nav-link" href="../index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="mission.html">Mission</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link current-page" href="">Membership</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="action.html">Call to Action</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="election.html">Election Information</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html">Contact</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="archive.html">Archive</a>
+			</li>
+		</ul>
+
+		<form class="membership-form" action="/send-member" method="POST">
+			<h2 class="form-title">360CDA Membership Application</h2>
+
+            <p class="note-msg">Please complete the membership form below. </p>
+
+			<div class="form-field">
+				<label class="form-label">Submittal Date:</label>
+				<input class="form-input" placeholder="mm/dd/yy" name="submittalDate">
+			</div>
+
+			<div class="form-field">
+				<label class="form-label">Precinct #:</label>
+				<input class="form-input" name="precinct">
+			</div>
+
+			<div class="form-field">
+				<label class="form-label">Name:</label>
+				<input class="form-input" name="name">
+			</div>			
+
+			<div class="form-field">
+				<label class="form-label">Address:</label>
+				<input class="form-input" placeholder="Street, City, State, Zip" name="address">
+			</div>			
+
+			<div class="form-field">
+				<label class="form-label">Phone #:</label>
+				<input class="form-input" placeholder="000-123-4567" name="phone">
+			</div>
+
+			<div class="form-field">
+				<label class="form-label">Email:</label>
+				<input class="form-input" name="email">
+			</div>			
+
+			<div class="form-field">
+				<label class="form-label">Employer:</label>
+				<input class="form-input" name="employer">
+			</div>
+
+			<div class="form-field">
+				<label class="form-label">Occupation:</label>
+				<input class="form-input" name="occupation">
+			</div>
+
+			<div class="form-field">
+				<label class="form-label">Recruited by:</label>
+				<input class="form-input" name="recruitedBy">
+			</div>
+ 
+            <p class="note-msg">Note:  By state law, 360 Corrider Democratic Action MUST report employer and occupation information in accordance with ethics rules.</p>
+
+			<p class="contact-question">How would you like to be contacted?</p>
+
+			<div class="contact-field-wrapper">
+				<div class="radio-field">
+					<input class="radio-input" type="checkbox" name="mailContact">			
+					<label class="radio-label">Mail</label>
+				</div>
+
+				<div class="radio-field">
+					<input class="radio-input" type="checkbox" name="emailContact">			
+					<label class="radio-label">Email</label>
+				</div>
+
+				<div class="radio-field">
+					<input class="radio-input" type="checkbox" name="phoneContact">			
+					<label class="radio-label">Phone</label>
+				</div>
+			</div>
+
+			<h3 class="committee-title">COMMITTEES</h3>
+			<p class="committee-text">I am interested in joining the following committees:</p>
+
+			<div class="committee-field-wrapper">
+				<div class="committee-field">
+					<input class="committee-input" type="checkbox" name="memI">			
+					<label class="committee-label">Membership</label>
+				</div>
+
+				<div class="committee-field">
+					<input class="committee-input" type="checkbox" name="nomI">								
+					<label class="committee-label">Nominating</label>
+				</div>			
+
+				<div class="committee-field">
+					<input class="committee-input" type="checkbox" name="issueAdvI">			
+					<label class="committee-label" >Issues Advocacy</label>
+				</div>
+
+				<div class="committee-field">
+					<input class="committee-input" type="checkbox" name="commServI">			
+					<label class="committee-label" >Community Service</label>
+				</div>
+
+				<div class="committee-field">
+					<input class="committee-input" type="checkbox" name="legisI">			
+					<label class="committee-label" >Legislative</label>
+				</div>
+
+				<div class="committee-field">
+					<input class="committee-input" type="checkbox" name="legalI">			
+					<label class="committee-label" >Legal</label>
+				</div>
+
+				<div class="committee-field">
+					<input class="committee-input" type="checkbox" name="commI">			
+					<label class="committee-label" >Communications</label>
+				</div>
+
+				<div class="committee-field">
+					<input class="committee-input" type="checkbox" name="fundI">			
+					<label class="committee-label" >Fundraising</label>
+				</div>
+
+				<div class="committee-field">
+					<input class="committee-input" type="checkbox" name="voterRegI">			
+					<label class="committee-label" >Voter Registration</label>
+				</div>
+			</div>
+
+			<h3 class="annual-dues-title">ANNUAL DUES</h3>
+			<p class="annual-dues-text">My $25 annual dues are enclosed as:</p>
+
+			<div class="annual-dues-field-wrapper">
+				<div class="annual-dues-field">
+					<input class="annual-dues-input" type="checkbox" name="duesCash">			
+					<label class="annual-dues-label">Cash</label>
+				</div>				
+
+				<div class="annual-dues-field">
+					<input class="annual-dues-input" type="checkbox" name="duesCheck">			
+					<label class="annual-dues-label">Check</label>
+				</div>
+
+				<div class="annual-dues-field">
+					<input class="annual-dues-input" type="checkbox" name="duesZelle">			
+                    <label class="annual-dues-label">Zelle</label>
+					<p class="annual-dues-option">
+						Click <a href="https://www.zellepay.com/" target="_blank">Zelle</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="sign-field">
+				<label class="form-label">Signature (Print Name):</label>
+				<input class="form-input" name="signature">
+			</div>
+
+			<div class="sign-field">
+				<label class="form-label">Date</label>
+				<input class="form-input" placeholder="mm/dd/yy" name="date">
+			</div>
+
+			<button class="submit-btn">Submit</button>
+			<p class="submit-msg">Once button is clicked, form is cleared and submitted.</p>
+			<p class="note-msg">The purpose of the Organization is to affect change and have a voice for all communities in proximity of Hwy 360.</p>
+		</form>
+
+		<footer class="main-footer">
+			<p class="footer-text">360CDA - Working for you</p>
+		</footer>
+
+	</div>
+
+	<script>
+		let membershipForm = document.getElementsByClassName('membership-form')[0];
+		membershipForm.addEventListener('submit', (event) => {
+			// event.preventDefault();
+			alert('Form submitted');
+		});
+	</script>
+</body>
+</html>
